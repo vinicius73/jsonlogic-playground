@@ -25,10 +25,10 @@
         border-radius: 50%;
       }
       .loader {
-        color: #292d3e;
+        margin: 0 auto;
+        color: #00d1b2;
         font-size: 11px;
         text-indent: -99999em;
-        margin: 55px auto;
         position: relative;
         width: 10em;
         height: 10em;
@@ -45,7 +45,7 @@
       .loader:before {
         width: 5.2em;
         height: 10.2em;
-        background: #ffffff;
+        background: #292d3e;
         border-radius: 10.2em 0 0 10.2em;
         top: -0.1em;
         left: -0.1em;
@@ -57,7 +57,7 @@
       .loader:after {
         width: 5.2em;
         height: 10.2em;
-        background: #ffffff;
+        background: #292d3e;
         border-radius: 0 10.2em 10.2em 0;
         top: -0.1em;
         left: 4.9em;
@@ -86,21 +86,37 @@
           transform: rotate(360deg);
         }
       }
-      .loader-title {
+      .loader-title, .loader-title a {
         text-align: center;
         font-weight: normal;
         margin: 0;
-        font-size: 2em;
-        color: #4a4a4a;
-        line-height: 1.5;
         font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-      }
-      .loader-title a {
         text-decoration: none;
+      }
+      .loader-title{
+        color: #fff;
+        font-size: 2em;
+        line-height: 1.5;
+        margin-top: 1em;
+      }
+      .loader-title a, .loader-title a:hover {
+        color: #00d1b2;
+      }
+      .loader-title a:hover {
+        text-decoration: underline;
+      }
+      body.starting {
+        background-color: #292d3e;
+      }
+      body.starting #app {
+        padding-top: 55px;
+      }
+      html {
+        overflow-y: scroll;
       }
     </style>
   </head>
-  <body>
+  <body class="starting">
     <noscript>
       <strong>We're sorry but JsonLogic Playground doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
