@@ -9,13 +9,106 @@
     <meta name=apple-mobile-web-app-status-bar-style content=#292d3e>
     <meta name=msapplication-navbutton-color content=#292d3e>
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+
+    <meta property="og:title" content="JsonLogic Playground">
+    <meta property="og:description" content="A simple JsonLogic tester, by Vinicius Reis">
+
     <title>JsonLogic Playground</title>
+    <style>
+      body, html {
+        padding: 0;
+        margin: 0;
+      }
+      .loader,
+      .loader:before,
+      .loader:after {
+        border-radius: 50%;
+      }
+      .loader {
+        color: #292d3e;
+        font-size: 11px;
+        text-indent: -99999em;
+        margin: 55px auto;
+        position: relative;
+        width: 10em;
+        height: 10em;
+        box-shadow: inset 0 0 0 1em;
+        -webkit-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        transform: translateZ(0);
+      }
+      .loader:before,
+      .loader:after {
+        position: absolute;
+        content: '';
+      }
+      .loader:before {
+        width: 5.2em;
+        height: 10.2em;
+        background: #ffffff;
+        border-radius: 10.2em 0 0 10.2em;
+        top: -0.1em;
+        left: -0.1em;
+        -webkit-transform-origin: 5.1em 5.1em;
+        transform-origin: 5.1em 5.1em;
+        -webkit-animation: load2 2s infinite ease 1.5s;
+        animation: load2 2s infinite ease 1.5s;
+      }
+      .loader:after {
+        width: 5.2em;
+        height: 10.2em;
+        background: #ffffff;
+        border-radius: 0 10.2em 10.2em 0;
+        top: -0.1em;
+        left: 4.9em;
+        -webkit-transform-origin: 0.1em 5.1em;
+        transform-origin: 0.1em 5.1em;
+        -webkit-animation: load2 2s infinite ease;
+        animation: load2 2s infinite ease;
+      }
+      @-webkit-keyframes load2 {
+        0% {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes load2 {
+        0% {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      .loader-title {
+        text-align: center;
+        font-weight: normal;
+        margin: 0;
+        font-size: 2em;
+        color: #4a4a4a;
+        line-height: 1.5;
+        font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+      }
+      .loader-title a {
+        text-decoration: none;
+      }
+    </style>
   </head>
   <body>
     <noscript>
       <strong>We're sorry but JsonLogic Playground doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
-    <div id="app"></div>
+    <div id="app">
+      <div class="loader"></div>
+      <h1 class="loader-title">A simple <a href="http://jsonlogic.com/" target="_blank">JsonLogic</a> tester,
+      by <strong><a href="https://vinicius73.dev">Vinicius Reis</a></strong></h1>
+    </div>
     <!-- built files will be auto injected -->
   </body>
 </html>
