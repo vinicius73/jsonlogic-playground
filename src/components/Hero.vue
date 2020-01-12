@@ -12,7 +12,8 @@ export default {
           JsonLogic Playground
         </h1>
         <h2 class="subtitle">
-          A simple <a href="http://jsonlogic.com/" target="_blank">JsonLogic</a> tester
+          A simple <a href="http://jsonlogic.com/" target="_blank">JsonLogic</a> tester,
+          by <strong><a href="https://vinicius73.dev">Vinicius Reis</a></strong>
         </h2>
       </div>
     </div>

@@ -2,8 +2,8 @@ $primary: #292d3e;
 $background: #fff;
 
 @import "~bulma/sass/utilities/_all.sass";
-@import "~bulma/sass/layout/_all.sass";
 @import "~bulma/sass/base/_all.sass";
+@import "~bulma/sass/layout/hero.sass";
 @import "~bulma/sass/elements/container.sass";
 @import "~bulma/sass/elements/title.sass";
 

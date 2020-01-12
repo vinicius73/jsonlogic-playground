@@ -57,7 +57,7 @@ export default {
 .inputs {
   display: grid;
   height: 100%;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
   .inputs-footer {
     display: grid;
     height: 100%;

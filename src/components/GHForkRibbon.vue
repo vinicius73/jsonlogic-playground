@@ -3,8 +3,8 @@
     class="github-fork-ribbon right-top fixed"
     href="https://github.com/vinicius73/jsonlogic-playground"
     target="_blank"
-    data-ribbon="Fork me on GitHub"
-    title="Fork me on GitHub">Fork me on GitHub</a>
+    data-ribbon="See on GitHub"
+    title="See on GitHub">See on GitHub</a>
 </template>
 <style scoped>
 /*!
