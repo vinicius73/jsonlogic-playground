@@ -47,22 +47,33 @@ export default {
 <style lang="scss" scoped>
 #app {
   height: 100%;
+  width: 100%;
   display: grid;
   grid-template-rows: 115px 1fr;
 }
 #main-content {
-  min-height: 100%;
+  height: 100%;
   width: 100%;
 }
 .inputs {
   display: grid;
   height: 100%;
-  grid-template-rows: 2fr 1fr;
+  width: 100%;
+  grid-template-rows: 1fr;
   .inputs-footer {
     display: grid;
     height: 100%;
     grid-column-gap: 0.5em;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .inputs {
+    grid-template-rows: 2fr 1fr;
+    .inputs-footer {
+      grid-template-columns: 2fr 1fr;
+    }
   }
 }
 </style>
