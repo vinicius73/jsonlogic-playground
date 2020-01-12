@@ -1,0 +1,14 @@
+@import "~bulma/sass/utilities/_all.sass";
+@import "~bulma/sass/layout/_all.sass";
+@import "~bulma/sass/base/_all.sass";
+@import "~bulma/sass/elements/container.sass";
+@import "~bulma/sass/elements/title.sass";
+
+html, body {
+  height: 100%;
+}
+
+.CodeMirror {
+  font-size: 1.6em;
+  line-height: 1.5em;
+}

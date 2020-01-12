@@ -3,14 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "bulma": "^0.8.0",
     "core-js": "^3.4.4",
+    "json-logic-js": "^1.2.2",
+    "jsonlint": "^1.6.3",
     "register-service-worker": "^1.6.2",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-codemirror": "^4.0.6"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.0",
