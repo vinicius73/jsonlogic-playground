@@ -4,7 +4,7 @@
   "description": "A simple JsonLogic tester",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://jsonlogic-playground.netlify.com/",
+  "homepage": "https://jsonlogic-playground.vinicius73.dev/",
   "repository": "https://github.com/vinicius73/jsonlogic-playground",
   "license": "Apache-2.0",
   "engines": {
