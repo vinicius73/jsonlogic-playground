@@ -2,15 +2,16 @@
 import JsonLogic from 'json-logic-js'
 import Hero from './components/Hero'
 import JSONInput from './components/JSONInput'
+import GHForkRibbon from './components/GHForkRibbon'
 
 export default {
   name: 'app',
-  components: { Hero, JSONInput },
+  components: { Hero, JSONInput, GHForkRibbon },
   data: () => ({
-    data: `{"value": 2}`,
-    rule: `{"and" : [
-    { ">" : [{"var":"value"}, 1] },
-    { "<" : [{"var": "value"}, 3] }
+    data: `{ "value": 2 }`,
+    rule: `{ "and" : [
+    { ">" : [ { "var" : "value" }, 1 ] },
+    { "<" : [ { "var" : "value" }, 3 ] }
 ]}`
   }),
   computed: {
@@ -29,6 +30,7 @@ export default {
 
 <template>
   <div id="app">
+    <GHForkRibbon />
     <Hero />
     <div id="main-content" class="container">
       <div class="inputs">
