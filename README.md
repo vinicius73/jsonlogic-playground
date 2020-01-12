@@ -1,24 +1,17 @@
-# jsonlogic-playground
+# JsonLogic Playground
+> A simple [JsonLogic](http://jsonlogic.com/) tester.
 
-## Project setup
+> https://jsonlogic-playground.netlify.com/
+
+
+## Running
+
 ```
 yarn install
+yarn dev
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
+### Build
 ```
 yarn build
 ```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

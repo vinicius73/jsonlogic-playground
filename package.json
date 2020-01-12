@@ -1,7 +1,15 @@
 {
   "name": "jsonlogic-playground",
-  "version": "0.1.0",
+  "author": "Vinicius Reis (https://vinicius73.dev)",
+  "description": "A simple JsonLogic tester",
+  "version": "1.0.0",
   "private": true,
+  "homepage": "https://jsonlogic-playground.netlify.com/",
+  "repository": "https://github.com/vinicius73/jsonlogic-playground",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">= 12"
+  },
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
